@@ -36,7 +36,7 @@ class FeedFinder
 
         $feedUrls = $feeds->filter(function ($feed) {
             return in_array($feed->getAttribute('type'), $this->feedTypes);
-        })->map(function($feed) {
+        })->map(function ($feed) {
             return $feed->getAttribute('href');
         })->toArray();
 
