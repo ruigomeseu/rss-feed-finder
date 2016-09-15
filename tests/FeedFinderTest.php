@@ -6,7 +6,7 @@ use Mockery;
 use PHPHtmlParser\Dom;
 use RuiGomes\RssFeedFinder\FeedFinder;
 
-class FinderTest extends \PHPUnit_Framework_TestCase
+class FeedFinderTest extends \PHPUnit_Framework_TestCase
 {
     public function testConstructorDom()
     {
