@@ -28,16 +28,6 @@ class FeedFinder
         $this->url = $url;
     }
 
-    public function setUrl($url)
-    {
-        $this->url = $url;
-    }
-
-    public function getUrl()
-    {
-        return $this->url;
-    }
-
     public function find()
     {
         $this->dom->loadFromUrl($this->url);
@@ -53,8 +43,23 @@ class FeedFinder
         return $feedUrls;
     }
 
+    public function setUrl($url)
+    {
+        $this->url = $url;
+    }
+
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
     public function setDom($dom)
     {
         $this->dom = $dom;
+    }
+
+    public function getDom()
+    {
+        return $this->dom;
     }
 }
