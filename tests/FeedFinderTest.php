@@ -73,6 +73,6 @@ class FeedFinderTest extends \PHPUnit_Framework_TestCase
 
     protected function loadHtmlFixture($name)
     {
-        return file_get_contents(__DIR__ . "/_fixtures/{$name}.html");
+        return file_get_contents(__DIR__."/_fixtures/{$name}.html");
     }
 }
