@@ -46,6 +46,8 @@ class FeedFinder
     public function setUrl($url)
     {
         $this->url = $url;
+
+        return $this;
     }
 
     public function getUrl()
