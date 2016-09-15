@@ -1,6 +1,6 @@
 <?php
 
-namespace RuiGomes;
+namespace RuiGomes\RssFeedFinder;
 
 use Illuminate\Support\Collection;
 use PHPHtmlParser\Dom;
@@ -33,6 +33,11 @@ class FeedFinder
         $this->url = $url;
     }
 
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
     public function find()
     {
         $this->dom->loadFromUrl($this->url);
@@ -46,5 +51,10 @@ class FeedFinder
         })->toArray();
 
         return $feedUrls;
+    }
+
+    public function setDom($dom)
+    {
+        $this->dom = $dom;
     }
 }

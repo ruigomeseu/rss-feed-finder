@@ -20,7 +20,12 @@
     },
     "autoload": {
       "psr-4": {
-        "RuiGomes\\": "src"
+        "RuiGomes\\RssFeedFinder\\": "src"
       }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RuiGomes\\Test\\": "test"
+        }
     }
 }
