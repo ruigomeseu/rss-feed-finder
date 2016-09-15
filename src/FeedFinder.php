@@ -24,7 +24,7 @@ class FeedFinder
 
     public function __construct($url)
     {
-        $this->dom = new Dom;
+        $this->dom = new Dom();
         $this->url = $url;
     }
 
