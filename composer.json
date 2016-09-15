@@ -1,0 +1,23 @@
+{
+    "name": "ruigomeseu/rss-feed-finder",
+    "description": "Find and extract any RSS or ATOM feeds in a URL or domain",
+    "keywords": ["rss", "atom", "feed", "finder", "scraper", "search"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rui Gomes",
+            "email": "hello@ruigomes.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "paquettg/php-html-parser": "1.7.*",
+        "tightenco/collect": "5.3.*"
+    },
+    "autoload": {
+      "psr-4": {
+        "RuiGomes\\": "src"
+      }
+    }
+}
